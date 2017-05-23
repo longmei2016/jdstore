@@ -9,8 +9,10 @@
     <body>
         <div class="container-fluid">
             <div class="row">
-                <%= render "common/sidebar" %>
-                <div class="container-fluid">
+                <div class="col-md-4">
+                    <%= render "common/sidebar" %>
+                </div>
+                <div class="col-md-8">
                     <%= yield %>
                 </div>
             </div>
