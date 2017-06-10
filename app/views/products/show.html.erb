@@ -70,15 +70,15 @@
     <div class="col-md-9 col-md-offset-2 col-xs-12">
         <h3 class="text-center" style="margin-left:-70px">商品详情</h3>
         <ul class="nav nav-tabs">
-            <li><a data-toggle="tab" href="#details1">资讯</a></li>
-            <li class="active"><a data-toggle="tab" href="#comment1">评论</a></li>
+            <li class="active"><a data-toggle="tab" href="#details1">资讯</a></li>
+            <li><a data-toggle="tab" href="#comment1">评论</a></li>
         </ul>
         <div class="tab-content">
-            <div id="details1" class="tab-pane fade">
+            <div id="details1" class="tab-pane fade in active">
                 <h2>详情</h2>
                 <p class="description"> <%= @product.description %> </p>
             </div>
-            <div id="comment1" class="tab-pane fade in active">
+            <div id="comment1" class="tab-pane fade">
                 <br>
                 <h3 class="comments_title">
                     <%= @product.comments.count %> Comments
